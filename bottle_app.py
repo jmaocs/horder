@@ -11,9 +11,8 @@ def load():
 @route('/login', method='GET')
 def login():
     return template(horder + 'views/login.tpl')
-
+    
 ################################################################################
-
 @route('/signup', method='GET')
 def signup():
 
@@ -36,15 +35,12 @@ def signup():
         return template(horder + '/views/signup.tpl')
 
 ################################################################################
-
 @route('/dashboard')
 def dashboard():
     return template(horder + 'views/dashboard.tpl')
 
 
 ################################################################################
-
-
 @error(403)
 def mistake(code):
     return 'The parameter you passed has the wrong format!'
