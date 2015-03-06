@@ -12,7 +12,6 @@ def load():
 def login():
     return template(horder + 'views/login.tpl')
 
-
 ################################################################################
 
 @route('/signup', method='GET')
